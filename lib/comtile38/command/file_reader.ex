@@ -1,6 +1,6 @@
-defmodule Comredis.Command.FileReader do
-  alias Comredis.Command
-  alias Comredis.Command.Argument
+defmodule Comtile38.Command.FileReader do
+  alias Comtile38.Command
+  alias Comtile38.Command.Argument
 
   @command_file "priv/commands.json"
 

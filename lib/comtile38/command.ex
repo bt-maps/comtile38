@@ -1,3 +1,3 @@
-defmodule Comredis.Command do
+defmodule Comtile38.Command do
   defstruct name: nil, canonical_name: nil, summary: nil, complexity: nil, arguments: [], since: nil, group: nil
 end

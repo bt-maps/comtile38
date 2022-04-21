@@ -1,4 +1,4 @@
-defmodule Comredis.Command.DocTest do
+defmodule Comtile38.Command.DocTest do
   @moduledoc """
   Module that contains every doctest for commands. They will be included
   both in the tests and in the documentation for each command function.
@@ -14,30 +14,30 @@ defmodule Comredis.Command.DocTest do
   When no doctest is found, it returns `nil`.
   """
   def tests(canonical_command_name)
-  def tests("client_list") do
+  def tests("script_flush") do
     """
-        iex> Comredis.client_list
-        ["CLIENT", "LIST"]
-    """
-  end
-
-  def tests("client_pause") do
-    """
-        iex> Comredis.client_pause(1000)
-        ["CLIENT", "PAUSE", 1000]
+        iex> Comtile38.client_list
+        ["SCRIPT", "FLUSH"]
     """
   end
 
-  def tests("command") do
+  def tests("server") do
     """
-        iex> Comredis.command
-        ["COMMAND"]
+        iex> Comtile38.command
+        ["SERVER"]
+    """
+  end
+
+  def tests("stats") do
+    """
+        iex> Comtile38.command
+        ["STATS"]
     """
   end
 
   def tests("quit") do
     """
-        iex> Comredis.quit
+        iex> Comtile38.quit
         ["QUIT"]
     """
   end

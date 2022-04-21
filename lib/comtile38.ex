@@ -1,14 +1,14 @@
-defmodule Comredis do
+defmodule Comtile38 do
   @moduledoc """
-  Entry point module of the library with all Redis commands functions.
+  Entry point module of the library with all Tile38 commands functions.
 
   The functions defined here are loaded in compile time from the
-  [Redis commands documentation](https://github.com/antirez/redis-doc/blob/master/commands.json)
+  [Tile38 commands documentation](https://github.com/tidwall/tile38/blob/master/core/commands.json)
   The only exceptions are `commands/0`, `command_group/1` and `command_groups/0`
   that provide a way to look for the desired commands.
   **Because you don't need to remember all of them by heart**
   """
-  use Comredis.Command.Generator
+  use Comtile38.Command.Generator
 
   @doc """
   Returns the list of all available commands.

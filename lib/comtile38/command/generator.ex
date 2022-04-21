@@ -1,14 +1,14 @@
-defmodule Comredis.Command.Generator do
+defmodule Comtile38.Command.Generator do
   @moduledoc """
   Module responsible for generating at compile-time a function for each Redis command.
   """
 
-  alias Comredis.{Command, Command.Argument, Command.DocTest, Command.FileReader}
+  alias Comtile38.{Command, Command.Argument, Command.DocTest, Command.FileReader}
 
   @doc """
   Macro that defines functions when this module is used.
 
-  A function for each command is defined in the module that executes `use Comredis.Command.Generator`
+  A function for each command is defined in the module that executes `use Comtile38.Command.Generator`
   """
   defmacro __using__(_options) do
     commands = for command <- FileReader.load, do: generate(command)

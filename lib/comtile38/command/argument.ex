@@ -1,4 +1,4 @@
-defmodule Comredis.Command.Argument do
+defmodule Comtile38.Command.Argument do
   @doc """
   The Argument struct.
 
@@ -18,7 +18,7 @@ defmodule Comredis.Command.Argument do
   @doc """
   Function to split the arguments that are optional or commands from the required ones.
 
-  It will receive a list of `Comredis.Command.Argument` structs and return a tuple
+  It will receive a list of `Comtile38.Command.Argument` structs and return a tuple
   with the required arguments first and then the others.
   """
   def split_options(arguments) do

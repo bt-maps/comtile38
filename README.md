@@ -1,24 +1,22 @@
-[![Build Status](https://travis-ci.org/iurifq/comredis.svg?branch=master)](https://travis-ci.org/iurifq/comredis)
+# Comtile38
 
-# Comredis
+Comtile38 is your comrade for Tile38 command generation in Elixir. It helps you generate correct commands with the right arity. You can then use your favorite Elixir client to push them to Redis.
 
-Comredis is your comrade for Redis command generation in Elixir. It helps you generate correct commands with the right arity. You can then use your favorite client to push them to Redis.
-
-It parses the [Redis commands documentation](https://github.com/antirez/redis-doc/blob/master/commands.json) and generates functions in compile-time. All functions are defined in the `Comredis` module.
+It parses the [Tile38 commands documentation](https://github.com/tidwall/tile38/blob/master/core/commands.json) and generates functions in compile-time. All functions are defined in the `Comtile38` module.
 
 ## Installation
 
-Add the `:comredis` dependency to your `mix.exs` file:
+Add the `:comtile38` dependency to your `mix.exs` file:
 
 ```elixir
 defp dependencies do
-  [{:comredis, ">= 0.0.0"}]
+  [{:comtile38, ">= 0.0.0"}]
 end
 ```
 
 Then run `$ mix deps.get` to install it.
 
-## Examples
+## Examples (TO DO)
 
 ```elixir
 Comredis.client_list
@@ -65,4 +63,4 @@ h Comredis.get
 * [ ] Increase the amount of examples for the generated functions with doctests
 * [X] Property based testing to guarantee it will not crash the application
 * [ ] Generate typespecs
-* [ ] Type check the command arguments
+* [ ] Test out in Livebooks
