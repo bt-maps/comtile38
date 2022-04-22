@@ -2,13 +2,13 @@ defmodule Comtile38.Mixfile do
   use Mix.Project
 
   @description """
-  comtile38 is your comrade for Tile38 command generation in Elixir (fork of comredis).
+  comtile38 is your comrade for Tile38 command generation in Elixir.
   """
 
   def project do
     [app: :comtile38,
-     version: "1.0.1",
-     elixir: "~> 1.2",
+     version: "0.0.1",
+     elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      name: "Comtile38",
@@ -24,10 +24,10 @@ defmodule Comtile38.Mixfile do
 
   defp deps do
     [
-      {:poison, ">= 1.0.0"},
-      {:earmark, "~> 0.1", only: :dev},
-      {:ex_doc, "~> 0.11", only: :dev},
-      {:redix, ">= 0.0.0", only: :test},
+      {:poison, "~> 5.0"},
+      {:earmark, "~> 0.2.1", only: :dev},
+      {:ex_doc, "~> 0.28.3", only: :dev},
+      {:redix, "~> 1.1", only: :test},
       {:excheck, "~> 0.3", only: :test},
       {:triq, github: "krestenkrab/triq", only: :test},
     ]

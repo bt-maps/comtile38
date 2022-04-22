@@ -18,49 +18,41 @@ Then run `$ mix deps.get` to install it.
 
 ## Examples (TO DO)
 
-```elixir
-Comredis.client_list
-#=> ["CLIENT", "LIST"]
 
-Comredis.get("k")
-#=> ["GET", "k"]
 
-Comredis.mget(["k1", "k2"])
-#=> ["MGET", "k1", "k2"]
-
-Comredis.set("k", "v")
-#=> ["SET", "k", "v"]
-
-# Using SET with expire time. It allows only the options the command accepts
-Comredis.set("k", "v", ex: 10)
-#=> ["SET", "k", "v", "EX", 10]
-```
-
-You also get nice [documentation](https://hexdocs.pm/comredis/Comredis.html) for each command directly from the Redis' documentation.
+You also get nice [documentation](https://hexdocs.pm/comtile38/Comtile38.html) for each command directly from the Tile38's documentation.
 You can even check it out right off your IEx session.
 
 ```
-h Comredis.get
+ h Comtile38.sethook  
 ```
+ def sethook(name, endpoint, nil, key, param, opts \\ [])            
 
->                                        def get(key)
+Creates a webhook which points to geofenced search
 
-> Get the value of a key
+Group: webhook
 
-> *Group:* string
+Arguments:
 
-> *Available since Redis version 1.0.0.*
+  • name string
 
-> *Time complexity:* O(1)
+  • endpoint string
 
-> Arguments:
+  • meta optional, multiple, [string, string]
 
-> * `key`
+  • ex optional, [double]
 
-## TODO
+  •  ["NEARBY", "WITHIN", "INTERSECTS"]
 
-* [X] Tested against clients(Redix and Exredis)
-* [ ] Increase the amount of examples for the generated functions with doctests
-* [X] Property based testing to guarantee it will not crash the application
-* [ ] Generate typespecs
-* [ ] Test out in Livebooks
+  • key string
+
+  • fence
+
+  • detect optional, [string]
+
+  • commands optional, [string]
+
+  • param string
+
+
+
