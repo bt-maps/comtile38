@@ -23,9 +23,8 @@ Then run `$ mix deps.get` to install it.
 You also get nice [documentation](https://hexdocs.pm/comtile38/0.0.1/Comtile38.html) for each command directly from the Tile38's documentation.
 You can even check it out right off your IEx session.
 
-```
- h Comtile38.sethook  
-```
- ![screenshot](https://media.giphy.com/media/kTWURvRof4g7EmVSti/giphy.gif)
+
+![screenshot](https://media.giphy.com/media/uVwSwMROJsVKqKQjTh/giphy.gif)
+![screenshot](https://media.giphy.com/media/kTWURvRof4g7EmVSti/giphy.gif)
 
 
