@@ -26,33 +26,6 @@ You can even check it out right off your IEx session.
 ```
  h Comtile38.sethook  
 ```
- def sethook(name, endpoint, nil, key, param, opts \\ [])            
-
-Creates a webhook which points to geofenced search
-
-Group: webhook
-
-Arguments:
-
-  • name string
-
-  • endpoint string
-
-  • meta optional, multiple, [string, string]
-
-  • ex optional, [double]
-
-  •  ["NEARBY", "WITHIN", "INTERSECTS"]
-
-  • key string
-
-  • fence
-
-  • detect optional, [string]
-
-  • commands optional, [string]
-
-  • param string
-
+ ![screenshot](https://media.giphy.com/media/kTWURvRof4g7EmVSti/giphy.gif)
 
 
