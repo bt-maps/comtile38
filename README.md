@@ -16,10 +16,6 @@ end
 
 Then run `$ mix deps.get` to install it.
 
-## Examples (TO DO)
-
-
-
 You also get nice [documentation](https://hexdocs.pm/comtile38/0.0.1/Comtile38.html) for each command directly from the Tile38's documentation.
 You can even check it out right off your IEx session.
 
