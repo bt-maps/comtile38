@@ -10,7 +10,7 @@ Add the `:comtile38` dependency to your `mix.exs` file:
 
 ```elixir
 defp dependencies do
-  [{:comtile38, ">= 0.0.0"}]
+  [{:comtile38, ">= 0.0.1"}]
 end
 ```
 
