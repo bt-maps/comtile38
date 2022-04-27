@@ -7,7 +7,7 @@ defmodule Comtile38.Mixfile do
 
   def project do
     [app: :comtile38,
-     version: "0.0.2",
+     version: "0.0.3",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -24,7 +24,7 @@ defmodule Comtile38.Mixfile do
 
   defp deps do
     [
-      {:poison, "~> 5.0", only: :dev},
+      {:poison, "~> 5.0"},
       {:earmark, "~> 0.2.1", only: :dev},
       {:ex_doc, "~> 0.28.3", only: :dev},
       {:redix, "~> 1.1", only: :test},
